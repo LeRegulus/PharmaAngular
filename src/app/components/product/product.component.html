@@ -1,0 +1,38 @@
+<app-navbar></app-navbar>
+
+<main id="main" style="margin-top: 8%;">
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Our Products</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div>
+
+      <div class="col-md-4" style="padding-left: 10%;">
+        <input class="form-control" type="text" name="search" [(ngModel)]="name" (input)="Saerch()" placeholder="Search Product">
+      </div>
+
+      <div class="row pb-5 mb-4">
+
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 m-5" *ngFor="let product of products | filter:name">
+          <!-- Card-->
+          <div class="card rounded shadow-sm border-0 icon-box">
+            <div class="card-body p-4"><img src="{{product.picture}}" alt="" class="img-fluid d-block mx-auto mb-3" style="width:200px; height:150px;">
+              <h5> <a class="text-dark">{{product.name | titlecase}}</a></h5>
+              <p class="small text-muted font-italic">{{product.description | slice:0:30}}...</p>
+              <a routerLink="/product/{{product.id}}" class="appointment-btn">Show Details</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Services Section -->
+
+</main>
+
+<app-footer></app-footer>
