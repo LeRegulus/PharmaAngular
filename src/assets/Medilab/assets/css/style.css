@@ -876,6 +876,9 @@ section {
   background: #1977cc;
   border-color: #1977cc;
 }
+.services{
+  background-color: #f1f7fd;
+}
 /*.services .icon-box:hover .icon {*/
 /*  background: #fff;*/
 /*!*}*!*/

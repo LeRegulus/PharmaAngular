@@ -19,7 +19,7 @@ export class ProductComponent implements OnInit {
     });
   }
 
-  Saerch() {
+  Search() {
     if (this.name == ""){
       this.ngOnInit();
     }else {
