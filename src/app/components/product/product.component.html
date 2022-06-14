@@ -16,14 +16,10 @@
             <input type="text" name="name" class="form-control" (input)="Search()" [(ngModel)]="name" id="name" placeholder="Search Product">
             <div class="validate"></div>
           </div>
-<!--          <div class="col-md-4 form-group mt-3 mt-md-0">-->
-<!--            <button type="submit" (click)= "Search()">Search</button>-->
-<!--          </div>-->
         </div>
       </form>
       <div class="row pb-5 mb-4">
         <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 m-5" *ngFor="let product of products | filter:name">
-          <!-- Card-->
           <div class="card rounded shadow-sm border-0 icon-box">
             <div class="card-body p-4"><img src="{{product.picture}}" alt="" class="img-fluid d-block mx-auto mb-3" style="width:200px; height:150px;">
               <h5> <a class="text-dark">{{product.name | titlecase}}</a></h5>

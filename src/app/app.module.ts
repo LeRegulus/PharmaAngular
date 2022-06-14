@@ -13,6 +13,7 @@ import {Ng2SearchPipeModule} from "ng2-search-filter";
 import {FormsModule} from "@angular/forms";
 import { InvestorComponent } from './components/investor/investor.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
     ViewProductComponent,
     InvestorComponent,
     AboutUsComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
